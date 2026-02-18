@@ -9,6 +9,7 @@ for (const [key, value] of Object.entries(obj)) {
 	console.log(`${key}: ${value}`);
 }
 
-const arr2 = [{ name: "Kunal", age: 22 }, { sports: "cricket" }];
-const findObj = arr2.find((item) => item.name === "Kunal");
-console.log(findObj);
+const arr = [{ name: "Kunal", age: 23 }, { sports: "cricket" }];
+
+const filteredArr = arr.filter((item) => item?.name === "Kunal");
+console.log(filteredArr);
